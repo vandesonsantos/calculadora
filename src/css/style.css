@@ -1,0 +1,74 @@
+body{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+
+.calculadora{
+    background-color: #C4C4C4;
+    color: #000;
+    width: 400px;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculadora .titulo{
+    font-size: .8em;
+    font-weight: 300;
+    color: #666;
+}
+
+.operacoes{
+    text-align: right;
+}
+
+.operador-1.operador-2{
+    overflow-wrap: break-word;
+    padding: 0.2em;
+    min-height: 1.6em;
+}
+
+.operador-1{
+    color: #777;
+}
+
+.operador-2{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.botoes-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+.botoes-container button{
+    background-color: #DBDBDB;
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    cursor: pointer;
+}
+
+.botoes-container .numero{
+    background-color: #F3F3F3;
+
+}
+
+.botoes-container button:hover{
+    background-color: #BABABA;
+    color: #999;
+}
+
+.botoes-container .btn-igual{
+    grid-column: span 2;
+    background-color: #75A5CB;
+}
+
+.botoes-container .btn-igual:hover{
+    background-color: #3A91D8;
+}
